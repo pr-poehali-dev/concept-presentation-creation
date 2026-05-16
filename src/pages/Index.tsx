@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-const LIVING_ROOM_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/bucket/616b9eea-fb39-447b-9825-ec196ba08851.jpg";
+const HALL_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/bucket/616b9eea-fb39-447b-9825-ec196ba08851.jpg";
+const OLD_ROOM_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/316d3820-8a0f-438e-8c59-67ea35e30207.jpg";
 const BAR_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/f59e4a42-43cc-4f7d-a6ae-6f1364902f2d.jpg";
 const PHOTO_LAB_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/6146f0c6-76d2-43f7-acfb-2125d7525175.jpg";
+const WELCOME_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/1dd23447-3e6c-4c8f-b239-785161fb0ad1.jpg";
 
 const GoldDivider = () => (
   <div style={{ width: "80px", height: "1px", background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", margin: "6px auto" }} />
@@ -33,21 +35,21 @@ const SlideBg = () => (
 const SLIDE_BG = "linear-gradient(135deg, #F5EDD6 0%, #EAD9B0 40%, #F0E5C4 70%, #E8D4A0 100%)";
 const F = "'Montserrat', sans-serif";
 
-// ────────────── SLIDE 1 ──────────────
+// ────────────── SLIDE 1 (старая картинка с гостиной) ──────────────
 const Slide1 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", opacity: 0.22 }} />
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${OLD_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", opacity: 0.22 }} />
     <div style={{ position: "absolute", bottom: -80, left: -80, width: 320, height: 320, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.22)", pointerEvents: "none" }} />
     <div style={{ position: "absolute", top: -60, right: -60, width: 240, height: 240, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.18)", pointerEvents: "none" }} />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", padding: "0 60px" }}>
       <div style={{ color: "#C9A84C", fontFamily: F, fontSize: "1.4rem", opacity: 0.65, letterSpacing: "0.3em" }}>✦ ✦ ✦</div>
       <div style={{ width: "100%", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-      <h1 style={{ fontFamily: F, fontSize: "clamp(2rem, 5vw, 3.8rem)", color: "#2C1A06", fontWeight: 700, lineHeight: 1.1, margin: 0, letterSpacing: "-0.01em" }}>
+      <h1 style={{ fontFamily: F, fontSize: "clamp(2.4rem, 5.5vw, 4.2rem)", color: "#2C1A06", fontWeight: 700, lineHeight: 1.1, margin: 0, letterSpacing: "-0.01em" }}>
         Гостиная Времени
       </h1>
       <GoldDivider />
-      <p style={{ fontFamily: F, fontSize: "clamp(0.75rem, 1.2vw, 1rem)", color: "#7A5C2E", maxWidth: "480px", lineHeight: 1.6, margin: 0 }}>
+      <p style={{ fontFamily: F, fontSize: "clamp(0.9rem, 1.5vw, 1.15rem)", color: "#7A5C2E", maxWidth: "520px", lineHeight: 1.6, margin: 0 }}>
         Концепция дня рождения в формате тёплой домашней гостиной, где собираются самые близкие
       </p>
       <div style={{ width: "100%", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
@@ -56,25 +58,25 @@ const Slide1 = () => (
   </div>
 );
 
-// ────────────── SLIDE 2 ──────────────
+// ────────────── SLIDE 2 (новое фото зала, хорошо видно) ──────────────
 const Slide2 = () => (
-  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
+  <div style={{ width: "100%", height: "100%", background: "#1a120a", display: "flex", position: "relative", overflow: "hidden" }}>
+    {/* Фото на всю правую часть */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "52%", backgroundImage: `url(${HALL_IMG})`, backgroundSize: "cover", backgroundPosition: "center top" }} />
+    {/* Градиент-переход */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "60%", background: "linear-gradient(90deg, #EAD9B0 0%, rgba(234,217,176,0.92) 20%, rgba(234,217,176,0.4) 50%, transparent 100%)" }} />
+    {/* Общий беж-фон слева */}
+    <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "48%", background: "linear-gradient(135deg, #F5EDD6, #EAD9B0)" }} />
     <SlideBg />
-    {/* Фото — правая половина */}
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "45%", backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", opacity: 1 }} />
-    {/* Градиент-переход слева от фото */}
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "55%", background: "linear-gradient(90deg, #F0E5C4 0%, #EAD9B0 45%, rgba(234,217,176,0.85) 60%, transparent 100%)" }} />
-    {/* Тёмный оверлей поверх фото для читаемости */}
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "45%", background: "linear-gradient(90deg, rgba(240,229,196,0.6) 0%, transparent 40%)" }} />
     <div style={{ position: "absolute", top: "15%", bottom: "15%", left: 10, width: 2, background: "linear-gradient(180deg, transparent, rgba(201,168,76,0.4) 30%, rgba(201,168,76,0.4) 70%, transparent)", pointerEvents: "none" }} />
-    <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "12px", padding: "32px 44px", maxWidth: "58%" }}>
+    <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "14px", padding: "32px 44px", width: "54%" }}>
       <div>
-        <h2 style={{ fontFamily: F, fontSize: "clamp(1.4rem, 2.8vw, 2.2rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Смыслы</h2>
-        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 4 }} />
+        <h2 style={{ fontFamily: F, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Смыслы</h2>
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 6 }} />
       </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontFamily: F, fontSize: "clamp(0.6rem, 1vw, 0.75rem)", color: "#3A2B0F", lineHeight: 1.75 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "9px", fontFamily: F, fontSize: "clamp(0.7rem, 1.1vw, 0.85rem)", color: "#3A2B0F", lineHeight: 1.75 }}>
         <p style={{ margin: 0 }}>Мы делаем не стандартный юбилей, а <strong style={{ color: "#6B4F1A" }}>тёплую домашнюю гостиную</strong>, где исполняется мечта именинника. В центре — большой стол, во главе которого он. Вокруг — его семья, дети, самые близкие люди.</p>
-        <p style={{ margin: 0 }}>Ему не нужно развлекать гостей — он просто наблюдает, как все собираются, общаются, смеются, и чувствует, что всем <strong style={{ color: "#6B4F1A" }}>комфортно и кайфово</strong>.</p>
+        <p style={{ margin: 0 }}>Ему не нужно развлекать гостей — он просто наблюдает, как все собираются, общаются, смеются, как подрастают дети, и чувствует, что всем <strong style={{ color: "#6B4F1A" }}>комфортно и кайфово</strong>.</p>
         <p style={{ margin: 0 }}>Картины оживают как <strong style={{ color: "#6B4F1A" }}>театральный перформанс</strong> — за стеклом появляется актёр, тень, видеовставка или живая сцена, рассказывающая истории именинника.</p>
         <p style={{ margin: 0 }}>Над всем этим — <strong style={{ color: "#6B4F1A" }}>фамильный герб</strong>. Старые часы отсчитывают не минуты, а эпохи. Потёртое кресло хранит тепло локтей. Рамки с выцветшими снимками вдруг оживают голосами друзей.</p>
         <p style={{ margin: 0, color: "#6B4F1A", fontWeight: 600 }}>Именно это мы и предлагаем — честно, душевно, с выдумкой и без пафоса.</p>
@@ -85,20 +87,20 @@ const Slide2 = () => (
 
 // ────────────── SLIDES 3-7: PEOPLE GRIDS ──────────────
 const PeopleSlide = ({ title, people, photoSize }: { title: string; people: string[]; photoSize: { w: string; h: string } }) => (
-  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden", gap: "20px", padding: "20px 28px" }}>
+  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden", gap: "18px", padding: "18px 28px" }}>
     <SlideBg />
     <DecorArcs />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center" }}>
-      <h2 style={{ fontFamily: F, fontSize: "clamp(1.4rem, 2.8vw, 2.2rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>{title}</h2>
+      <h2 style={{ fontFamily: F, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>{title}</h2>
       <GoldDivider />
     </div>
-    <div style={{ position: "relative", zIndex: 2, display: "flex", gap: people.length <= 3 ? "44px" : "20px", justifyContent: "center", alignItems: "flex-end", flexWrap: "nowrap" }}>
+    <div style={{ position: "relative", zIndex: 2, display: "flex", gap: people.length <= 3 ? "48px" : "22px", justifyContent: "center", alignItems: "flex-end", flexWrap: "nowrap" }}>
       {people.map((name, i) => (
-        <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+        <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
           <PhotoPlaceholder name={name} width={photoSize.w} height={photoSize.h} />
           <div style={{ textAlign: "center" }}>
-            <p style={{ fontFamily: F, fontSize: "clamp(0.6rem, 0.9vw, 0.8rem)", color: "#2C1A06", fontWeight: 600, margin: 0, maxWidth: "160px", lineHeight: 1.3 }}>{name}</p>
-            <div style={{ width: 30, height: 1, background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", margin: "4px auto 0" }} />
+            <p style={{ fontFamily: F, fontSize: "clamp(0.72rem, 1.1vw, 0.92rem)", color: "#2C1A06", fontWeight: 600, margin: 0, maxWidth: "180px", lineHeight: 1.3 }}>{name}</p>
+            <div style={{ width: 30, height: 1, background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", margin: "5px auto 0" }} />
           </div>
         </div>
       ))}
@@ -110,35 +112,43 @@ const PeopleSlide = ({ title, people, photoSize }: { title: string; people: stri
 const Slide8 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 55%", display: "flex", flexDirection: "column", gap: "12px", padding: "28px 36px" }}>
+    {/* Левая колонка — текст */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 58%", display: "flex", flexDirection: "column", gap: "14px", padding: "30px 40px" }}>
       <div>
-        <h2 style={{ fontFamily: F, fontSize: "clamp(1.4rem, 2.8vw, 2.2rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Welcome</h2>
-        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 10 }} />
+        <h2 style={{ fontFamily: F, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Welcome</h2>
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 12 }} />
       </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: "7px", fontFamily: F, fontSize: "clamp(0.58rem, 0.95vw, 0.72rem)", color: "#3A2B0F", lineHeight: 1.7 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontFamily: F, fontSize: "clamp(0.7rem, 1.1vw, 0.85rem)", color: "#3A2B0F", lineHeight: 1.75 }}>
         {[
-          "Гостей встречают хостес и вручают карточку с их особым местом за столом",
-          "Изысканные welcome-закуски, созданные специально для этого вечера",
-          "Работают фотографы и видеографы — каждый момент сохраняется в вечность",
+          "Гостей встречают хостес, выдают маленькую карточку, на которой написан сектор, где будет сидеть гость",
+          "Изысканные welcome-закуски",
+          "Работают фотографы и видеографы — каждый момент сохраняется в памяти",
           "Снимается SDE — трогательный фильм о жизни именинника прямо в день торжества",
-          "Живой символ праздника: медведь, конь или олень — гости запомнят навсегда",
-          "Атмосфера уютной гостиной: камин, мягкий свет — хочется остановиться и просто быть здесь",
+          "Символ праздника: медведь, конь или олень — гости запомнят навсегда",
         ].map((text, i) => (
-          <div key={i} style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}>
-            <span style={{ color: "#C9A84C", fontSize: "0.6rem", marginTop: "3px", flexShrink: 0 }}>◈</span>
+          <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+            <span style={{ color: "#C9A84C", fontSize: "0.75rem", marginTop: "2px", flexShrink: 0, fontWeight: 700 }}>◈</span>
             <p style={{ margin: 0 }}>{text}</p>
           </div>
         ))}
       </div>
-      <div style={{ marginTop: 6, padding: "8px 12px", background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 4, fontFamily: F, fontSize: "clamp(0.55rem, 0.88vw, 0.68rem)", color: "#6B4F1A", lineHeight: 1.5 }}>
-        ♪ Живая музыка: Алексей Алексин (вокал, гитара) — или Ксения Аксютик, финалистка 14-го сезона «Голос»
-      </div>
     </div>
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 45%", display: "flex", flexDirection: "column", justifyContent: "center", gap: "12px", padding: "28px 36px 28px 0" }}>
-      <div style={{ width: "100%", height: "55%", backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 4, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(139,105,20,0.15)" }} />
-      <div style={{ display: "flex", gap: "12px", flex: 1 }}>
-        <PhotoPlaceholder name="Welcome-зона" width="50%" height="100%" />
-        <PhotoPlaceholder name="Камин" width="50%" height="100%" />
+    {/* Правая колонка — картинка */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 42%", display: "flex", alignItems: "center", padding: "24px 32px 24px 0" }}>
+      <div style={{
+        width: "100%",
+        height: "82%",
+        backgroundImage: `url(${WELCOME_IMG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        borderRadius: "6px",
+        border: "2px solid rgba(201,168,76,0.45)",
+        boxShadow: "0 6px 32px rgba(139,105,20,0.18)",
+        position: "relative",
+        overflow: "hidden",
+      }}>
+        {/* Лёгкий оверлей снизу */}
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "30%", background: "linear-gradient(transparent, rgba(58,43,15,0.25))" }} />
       </div>
     </div>
   </div>
@@ -150,18 +160,18 @@ const Slide9 = () => (
     <SlideBg />
     <div style={{ position: "relative", zIndex: 2, flex: "0 0 52%", display: "flex", flexDirection: "column", gap: "12px", padding: "28px 36px" }}>
       <div>
-        <h2 style={{ fontFamily: F, fontSize: "clamp(1.4rem, 2.8vw, 2.2rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Welcome</h2>
+        <h2 style={{ fontFamily: F, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Welcome</h2>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 14 }} />
       </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
         {[
           { title: "Бар с дегустацией настоек", text: "Аутентичные аппараты в духе самогонного куба, бутыли с настойками на травах и ягодах. Не просто дегустация — история в каждом глотке." },
           { title: "Фотолаборатория «Шипр»", text: "Ретро-снимки на плёнку, будто найденные в старом альбоме. Каждый гость уходит с кусочком живой памяти этого вечера." },
           { title: "Семейно-дружеское древо", text: "Заранее подготовленный макет с ветками для каждого гостя. Фотографии на клейкой основе — гости вклеивают себя в нужное место. В финале именинник получает эту картину в подарок." },
         ].map((zone, i) => (
           <div key={i} style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-            <p style={{ fontFamily: F, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 3px" }}>{zone.title}</p>
-            <p style={{ fontFamily: F, fontSize: "clamp(0.55rem, 0.88vw, 0.66rem)", color: "#5A3E18", lineHeight: 1.7, margin: 0 }}>{zone.text}</p>
+            <p style={{ fontFamily: F, fontSize: "clamp(0.72rem, 1.1vw, 0.88rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 3px" }}>{zone.title}</p>
+            <p style={{ fontFamily: F, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "#5A3E18", lineHeight: 1.75, margin: 0 }}>{zone.text}</p>
           </div>
         ))}
       </div>
@@ -170,7 +180,7 @@ const Slide9 = () => (
       <div style={{ width: "100%", height: "50%", backgroundImage: `url(${BAR_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 4, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(139,105,20,0.15)" }} />
       <div style={{ display: "flex", gap: "12px", flex: 1 }}>
         <div style={{ flex: 1, backgroundImage: `url(${PHOTO_LAB_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 4, border: "2px solid rgba(201,168,76,0.4)" }} />
-        <div style={{ flex: 1, backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center bottom", borderRadius: 4, border: "2px solid rgba(201,168,76,0.4)" }} />
+        <div style={{ flex: 1, backgroundImage: `url(${HALL_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 4, border: "2px solid rgba(201,168,76,0.4)" }} />
       </div>
     </div>
   </div>
@@ -180,11 +190,11 @@ const Slide9 = () => (
 const slides = [
   { id: 1, component: <Slide1 /> },
   { id: 2, component: <Slide2 /> },
-  { id: 3, component: <PeopleSlide title="Ведущие" people={["Артем Демихов", "Лянка Грыу", "Александр Шпуньгин"]} photoSize={{ w: "180px", h: "230px" }} /> },
-  { id: 4, component: <PeopleSlide title="Ведущий" people={["Артем Маслов", "Анна Банщикова", "Алексей Удодов", "Лариса Гузеева", "Владислав Сапунов"]} photoSize={{ w: "120px", h: "155px" }} /> },
-  { id: 5, component: <PeopleSlide title="Артисты" people={["Лолита", "Хор Турецкого"]} photoSize={{ w: "230px", h: "280px" }} /> },
-  { id: 6, component: <PeopleSlide title="Артисты" people={["Ваенга", "Юрий Антонов", "Александр Серов", "Браво"]} photoSize={{ w: "150px", h: "190px" }} /> },
-  { id: 7, component: <PeopleSlide title="Артисты" people={["Александр Маршал", "Игорь Николаев", "Пелагея", "Сосо Павлиашвили"]} photoSize={{ w: "150px", h: "190px" }} /> },
+  { id: 3, component: <PeopleSlide title="Ведущие" people={["Артем Демихов", "Лянка Грыу", "Александр Шпуньгин"]} photoSize={{ w: "185px", h: "235px" }} /> },
+  { id: 4, component: <PeopleSlide title="Ведущие" people={["Артем Маслов", "Анна Банщикова", "Алексей Удодов", "Лариса Гузеева", "Владислав Сапунов"]} photoSize={{ w: "125px", h: "160px" }} /> },
+  { id: 5, component: <PeopleSlide title="Артисты" people={["Лолита", "Хор Турецкого"]} photoSize={{ w: "240px", h: "290px" }} /> },
+  { id: 6, component: <PeopleSlide title="Артисты" people={["Ваенга", "Юрий Антонов", "Александр Серов", "Браво"]} photoSize={{ w: "155px", h: "195px" }} /> },
+  { id: 7, component: <PeopleSlide title="Артисты" people={["Александр Маршал", "Игорь Николаев", "Пелагея", "Сосо Павлиашвили"]} photoSize={{ w: "155px", h: "195px" }} /> },
   { id: 8, component: <Slide8 /> },
   { id: 9, component: <Slide9 /> },
 ];
