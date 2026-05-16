@@ -281,17 +281,14 @@ const Slide11 = () => (
 
 // ────────────── SLIDE 12: БЛОК 1 — НАЧАЛО ПУТИ ──────────────
 const ROOM_DECOR_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/f89bf134-7f67-4c27-b2b2-c552fe113f82.jpg";
+const TUFTING_HERALDIC_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/bucket/57b78135-abaf-4937-b32a-78f077dc2d7e.jpg";
 
 const Slide12 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    <DecorArcs />
     <LeftLine />
-    {/* Фото справа */}
-    <div style={{ position: "absolute", top: "5%", right: "3%", bottom: "5%", width: "38%", backgroundImage: `url(${ROOM_DECOR_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 32px rgba(58,43,15,0.18)" }} />
-    <div style={{ position: "absolute", top: 0, right: "35%", bottom: 0, width: "18%", background: "linear-gradient(90deg, #EAD9B0, rgba(234,217,176,0))" }} />
     {/* Левая часть — текст */}
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 57%", display: "flex", flexDirection: "column", gap: "12px", padding: "28px 40px" }}>
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 54%", display: "flex", flexDirection: "column", gap: "12px", padding: "28px 36px" }}>
       <div>
         <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 6px", textTransform: "uppercase" }}>I блок</p>
         <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Начало пути</h2>
@@ -312,12 +309,19 @@ const Slide12 = () => (
         </p>
       </div>
     </div>
+    {/* Правая часть — два фото стопкой */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 46%", display: "flex", flexDirection: "column", gap: "12px", padding: "24px 32px 24px 0" }}>
+      <div style={{ flex: "0 0 52%", backgroundImage: `url(${ROOM_DECOR_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(58,43,15,0.14)" }} />
+      <div style={{ flex: 1, backgroundImage: `url(${TUFTING_HERALDIC_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(58,43,15,0.14)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "35%", background: "linear-gradient(transparent, rgba(20,10,0,0.5))" }} />
+        <p style={{ position: "absolute", bottom: 10, left: 12, fontFamily: FM, fontSize: "0.55rem", color: "rgba(255,240,200,0.9)", margin: 0, fontWeight: 600, letterSpacing: "0.05em" }}>Фамильный герб</p>
+      </div>
+    </div>
   </div>
 );
 
 // ────────────── SLIDE 13: БЛОК 1 — СЕМЕЙНОЕ ДРЕВО ──────────────
-const TREE_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/e0323a76-6d41-4dec-b88e-f08841fb836c.jpg";
-const DANCERS_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/5a4d7a9a-0672-4503-92a4-0c52d3ec2deb.jpg";
+const OAK_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/36878bb6-ac69-4407-bdb8-8dfa8dc9a274.jpg";
 
 const Slide13 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
@@ -332,23 +336,59 @@ const Slide13 = () => (
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "11px", fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#3A2B0F", lineHeight: 1.82 }}>
         <p style={{ margin: 0 }}>
-          На сцене начинает рисоваться <strong style={{ color: "#6B4F1A" }}>семейное древо</strong>. Оно растёт медленно — ветвь за ветвью, имя за именем. Корни уходят глубоко, ствол становится шире и прочнее с каждым поколением. Это история рода — живая, настоящая, сплетённая из судеб.
+          На сцене начинает рисоваться <strong style={{ color: "#6B4F1A" }}>родовое древо</strong> — могучий русский дуб. Он растёт медленно: ветвь за ветвью, имя за именем. Корни уходят глубоко в землю, ствол становится шире и прочнее с каждым поколением. Это история рода — живая, настоящая, сплетённая из судеб.
         </p>
         <p style={{ margin: 0 }}>
           Под звуки композиции <strong style={{ color: "#6B4F1A" }}>«Мои года, моё богатство»</strong> — в исполнении Хора Турецкого или солиста-оперного певца — зал наполняется особым теплом. Слова о времени, о том, что по-настоящему ценно, звучат как признание.
         </p>
         <p style={{ margin: 0 }}>
-          На сцену выходят <strong style={{ color: "#6B4F1A" }}>танцовщики с большими листьями</strong> — золотыми, трепещущими, как живые. Они кружатся, переплетаются, создают образ дерева в движении. А в финале каждый снимает верхний слой листа — и под ним оказывается <strong style={{ color: "#6B4F1A" }}>фотография</strong>: лица, моменты, история.
-        </p>
-        <p style={{ margin: 0, color: "#6B4F1A", fontStyle: "italic", fontFamily: FH, fontSize: "clamp(0.75rem, 1.1vw, 0.9rem)" }}>
-          Дерево — это не просто образ. Это сам именинник: корни, которые держат. Ветви, которые тянутся к свету.
+          На сцену выходят <strong style={{ color: "#6B4F1A" }}>танцовщики с большими листьями</strong> — золотыми, трепещущими, как живые. Они кружатся, переплетаются, создают образ дерева в движении. В финале каждый снимает верхний слой листа — и под ним оказывается <strong style={{ color: "#6B4F1A" }}>фотография</strong>: лица, моменты, история.
         </p>
       </div>
     </div>
-    {/* Правая часть — две картинки */}
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 48%", display: "flex", flexDirection: "column", gap: "12px", padding: "24px 32px 24px 0" }}>
-      <div style={{ flex: 1, backgroundImage: `url(${TREE_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(58,43,15,0.14)" }} />
-      <div style={{ flex: 1, backgroundImage: `url(${DANCERS_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 4px 20px rgba(58,43,15,0.14)" }} />
+    {/* Правая часть — дуб на всю высоту */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 48%", padding: "18px 28px 18px 0" }}>
+      <div style={{ width: "100%", height: "100%", backgroundImage: `url(${OAK_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 28px rgba(58,43,15,0.18)" }} />
+    </div>
+  </div>
+);
+
+// ────────────── SLIDE 14: БЛОК 1 — ЗОЛОТОЕ ДЕРЕВО ──────────────
+const SWING_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/5d5d2c72-c34a-4707-ac85-7200994eacab.jpg";
+
+const Slide14 = () => (
+  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
+    <SlideBg />
+    <DecorArcs />
+    <LeftLine />
+    {/* Левая часть — текст */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 55%", display: "flex", flexDirection: "column", gap: "12px", padding: "24px 36px" }}>
+      <div>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 6px", textTransform: "uppercase" }}>I блок</p>
+        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Начало пути</h2>
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 12 }} />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "11px", fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#3A2B0F", lineHeight: 1.82 }}>
+        <p style={{ margin: 0 }}>
+          Из-за кулис раздаются два голоса — они перебивают друг друга, но не мешают, а дополняют. Дуэт ведущих начинает рассказывать <strong style={{ color: "#6B4F1A" }}>сказку про Золотое дерево</strong>: один подхватывает фразу, другой её продолжает. История звучит как старинная легенда — про корни, про силу, про то, что остаётся.
+        </p>
+        <p style={{ margin: 0 }}>
+          В середине рассказа — момент про <strong style={{ color: "#6B4F1A" }}>качели</strong>. И в эту секунду с колосников медленно опускаются качели — резные, золотые, как из детского сна. Ведущие выходят в зал, оказываются среди гостей, взаимодействуют с ними, пока над всем этим парит образ.
+        </p>
+        <p style={{ margin: 0 }}>
+          Плавный разговор ведущих подводит к воспоминаниям — к <strong style={{ color: "#6B4F1A" }}>полёту по времени</strong>. Под контент с фактами из жизни именинника в зал вплывает <strong style={{ color: "#6B4F1A" }}>гимнастка на качелях</strong>. Она парит над залом — грациозно, невесомо — пока звучат истории, которые знают только близкие.
+        </p>
+        <p style={{ margin: 0, color: "#6B4F1A", fontStyle: "italic", fontFamily: FH, fontSize: "clamp(0.75rem, 1.1vw, 0.9rem)" }}>
+          «Качели — это время. Туда и обратно. Прошлое и будущее. И он — в самом центре.»
+        </p>
+      </div>
+    </div>
+    {/* Правая часть — фото гимнастки на качелях */}
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 45%", padding: "18px 28px 18px 0" }}>
+      <div style={{ width: "100%", height: "100%", backgroundImage: `url(${SWING_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 28px rgba(58,43,15,0.18)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "30%", background: "linear-gradient(transparent, rgba(20,10,0,0.4))" }} />
+        <p style={{ position: "absolute", bottom: 12, left: 14, fontFamily: FM, fontSize: "0.55rem", color: "rgba(255,240,200,0.88)", margin: 0, fontWeight: 600, letterSpacing: "0.05em" }}>Номер гимнастки на качелях</p>
+      </div>
     </div>
   </div>
 );
@@ -368,6 +408,7 @@ const slides = [
   { id: 11, component: <Slide11 /> },
   { id: 12, component: <Slide12 /> },
   { id: 13, component: <Slide13 /> },
+  { id: 14, component: <Slide14 /> },
 ];
 
 // ────────────── MAIN ──────────────
