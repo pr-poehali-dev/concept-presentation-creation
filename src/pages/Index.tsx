@@ -588,7 +588,10 @@ const Slide18 = () => (
     <div style={{ position: "relative", zIndex: 2, width: "60%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "28px 44px", gap: "18px" }}>
       <div>
         <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок · Становление</p>
-        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Школьный опрос</h2>
+        <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
+          <h2 style={{ fontFamily: FH, fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Становление</h2>
+          <span style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#8B6914", fontStyle: "italic" }}>Школьный опрос</span>
+        </div>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7 }} />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
@@ -620,65 +623,49 @@ const CONSTRUCTION_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84
 const PLOV_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/65b9878f-1766-4441-be8e-e2e71cc37d5c.jpg";
 
 const Slide19 = () => (
-  <div style={{ width: "100%", height: "100%", background: "#1C1008", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
-    {/* Плов / Казахстан — тёплый фон */}
-    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${PLOV_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.5 }} />
-    {/* Тёплый оверлей — ещё светлее */}
-    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(30,16,4,0.52) 0%, rgba(30,16,4,0.28) 50%, rgba(30,16,4,0.44) 100%)" }} />
-    <div style={{ position: "absolute", inset: 0, background: "rgba(245,225,170,0.18)" }} />
-    {/* Золотой блик сверху */}
+  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
+    {/* Плов / Казахстан — тёплый светлый фон */}
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${PLOV_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
+    <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.72)" }} />
+    <SlideBg />
     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-    <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", border: "1px solid rgba(201,168,76,0.15)", pointerEvents: "none" }} />
+    <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", border: "1px solid rgba(201,168,76,0.18)", pointerEvents: "none" }} />
+    <LeftLine />
     {/* Заголовок */}
-    <div style={{ position: "relative", zIndex: 2, padding: "20px 44px 0", flexShrink: 0 }}>
-      <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "rgba(201,168,76,0.75)", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок · Становление</p>
+    <div style={{ position: "relative", zIndex: 2, padding: "18px 44px 0", flexShrink: 0 }}>
+      <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок · Становление</p>
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#F5EDD6", fontWeight: 600, margin: 0 }}>Номер про стройку</h2>
-        <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(201,168,76,0.4), transparent)" }} />
-        <p style={{ fontFamily: FM, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "rgba(201,168,76,0.7)", margin: 0, fontStyle: "italic" }}>Попурри из песен</p>
+        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Номер про стройку</h2>
+        <div style={{ flex: 1, height: 1, background: "linear-gradient(90deg, rgba(201,168,76,0.5), transparent)" }} />
+        <p style={{ fontFamily: FM, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "#8B6914", margin: 0, fontStyle: "italic" }}>Попурри из песен</p>
       </div>
-      <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, rgba(201,168,76,0.5), transparent)", marginTop: 8 }} />
+      <div style={{ width: "100%", height: 2, background: "linear-gradient(90deg, #C9A84C, rgba(201,168,76,0.2), transparent)", marginTop: 6 }} />
     </div>
     {/* Три акта */}
-    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", padding: "14px 44px 16px", gap: "0" }}>
+    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", padding: "12px 44px 0", gap: "0" }}>
       {[
-        {
-          num: "I",
-          song: "Казахстан",
-          action: "Выносим плов",
-          text: "Торжественный выход с дымящимся казаном. Тепло Казахстана — на столе и в сердцах. Аромат родины открывает этот акт.",
-        },
-        {
-          num: "II",
-          song: "Эх, дороги",
-          action: "Смена дислокации",
-          text: "На экранах меняется контент: города, объекты, горизонты. Жизнь в движении — дороги, которые всегда вели вперёд.",
-        },
-        {
-          num: "III",
-          song: "Сургут",
-          action: "Кубы → логотип",
-          text: "Танцовщики с кубами в финале выстраивают логотип компании. Дело всей жизни складывается в единый образ прямо перед залом.",
-        },
+        { num: "I", song: "Казахстан", action: "Выносим плов", text: "Торжественный выход с дымящимся казаном. Тепло Казахстана — на столе и в сердцах. Аромат родины открывает этот акт." },
+        { num: "II", song: "Эх, дороги", action: "Смена дислокации", text: "На экранах меняется контент: города, объекты, горизонты. Жизнь в движении — дороги, которые всегда вели вперёд." },
+        { num: "III", song: "Сургут", action: "Кубы → логотип", text: "Танцовщики с кубами в финале выстраивают логотип компании. Дело всей жизни складывается в единый образ прямо перед залом." },
       ].map((act, i) => (
-        <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 0", borderRight: i < 2 ? "1px solid rgba(201,168,76,0.2)" : "none", marginRight: i < 2 ? "20px" : 0 }}>
+        <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 0", borderRight: i < 2 ? "1px solid rgba(201,168,76,0.25)" : "none", marginRight: i < 2 ? "20px" : 0 }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: "10px" }}>
-            <span style={{ fontFamily: FH, fontSize: "clamp(1.8rem, 3vw, 2.4rem)", color: "rgba(201,168,76,0.25)", fontWeight: 400, lineHeight: 1 }}>{act.num}</span>
+            <span style={{ fontFamily: FH, fontSize: "clamp(1.8rem, 3vw, 2.4rem)", color: "rgba(201,168,76,0.3)", fontWeight: 400, lineHeight: 1 }}>{act.num}</span>
             <div>
-              <p style={{ fontFamily: FH, fontSize: "clamp(1rem, 1.6vw, 1.25rem)", color: "#F5EDD6", fontWeight: 600, margin: 0, lineHeight: 1.2 }}>«{act.song}»</p>
+              <p style={{ fontFamily: FH, fontSize: "clamp(1rem, 1.6vw, 1.25rem)", color: "#2C1A06", fontWeight: 600, margin: 0, lineHeight: 1.2 }}>«{act.song}»</p>
               <p style={{ fontFamily: FM, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "#C9A84C", fontWeight: 700, margin: 0, letterSpacing: "0.07em", textTransform: "uppercase" }}>{act.action}</p>
             </div>
           </div>
           <div style={{ width: 40, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)" }} />
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.12vw, 0.88rem)", color: "rgba(245,237,214,0.88)", lineHeight: 1.82, margin: 0, flex: 1 }}>{act.text}</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0, flex: 1 }}>{act.text}</p>
         </div>
       ))}
     </div>
-    {/* Поздравление */}
-    <div style={{ position: "relative", zIndex: 2, margin: "0 44px 16px", padding: "10px 16px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: 6, display: "flex", alignItems: "center", gap: "12px" }}>
+    {/* Поздравление — поднято выше, теперь часть основного контента */}
+    <div style={{ position: "relative", zIndex: 2, margin: "10px 44px 18px", padding: "10px 16px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 6, display: "flex", alignItems: "center", gap: "12px" }}>
       <div style={{ width: 3, minHeight: 24, background: "#C9A84C", borderRadius: 2, flexShrink: 0 }} />
-      <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "rgba(245,237,214,0.85)", lineHeight: 1.7, margin: 0 }}>
-        <strong style={{ color: "#E8C97A" }}>Поздравление от коллег</strong> — те, кто строил рядом, знает цену каждому решению и каждой победе.
+      <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.12vw, 0.88rem)", color: "#3A2B0F", lineHeight: 1.7, margin: 0 }}>
+        <strong style={{ color: "#6B4F1A" }}>Поздравление от коллег</strong> — те, кто строил рядом, знает цену каждому решению и каждой победе.
       </p>
     </div>
   </div>
@@ -694,16 +681,16 @@ const Slide20 = () => (
     <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${FILM_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.3 }} />
     <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.82)" }} />
     <DecorArcs />
-    {/* Весь контент — в одной вертикальной колонке по центру-левее */}
-    <div style={{ position: "relative", zIndex: 2, width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "22px 52px", gap: "16px" }}>
-      {/* Заголовок */}
-      <div>
+    {/* Весь контент — по центру */}
+    <div style={{ position: "relative", zIndex: 2, width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "22px 52px", gap: "16px" }}>
+      {/* Заголовок — по центру */}
+      <div style={{ textAlign: "center" }}>
         <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>III блок</p>
         <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>О нём</h2>
-        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 0 }} />
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", marginTop: 7, marginBottom: 0, marginLeft: "auto", marginRight: "auto" }} />
       </div>
-      {/* Роли — теги */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "7px" }}>
+      {/* Роли — теги по центру */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "7px", justifyContent: "center" }}>
         {["Брат", "Любимый / муж", "Отец", "Дедушка", "Друг", "Профессионал", "Руководитель"].map((role, i) => (
           <span key={i} style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#6B4F1A", fontWeight: 700 }}>
             {i < 6 ? `${role} ·` : role}
@@ -711,7 +698,7 @@ const Slide20 = () => (
         ))}
       </div>
       {/* Связный нарратив */}
-      <div style={{ display: "flex", gap: "32px" }}>
+      <div style={{ display: "flex", gap: "32px", width: "100%" }}>
         <div style={{ flex: 1, fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.85 }}>
           <p style={{ margin: "0 0 10px" }}>
             Этот блок — живой портрет именинника, собранный из голосов тех, кто знает его лучше всего. Заранее записанные видео и голосовые сообщения от гостей: каждый — об одной грани. Какой он как отец. Какой как друг. Что в нём видит руководитель. Что чувствует брат. Из этих кусочков на экране складывается образ — настоящий, объёмный, без сценария.
@@ -737,67 +724,53 @@ const Slide20 = () => (
 const FAMILY_HALL_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/8f4e4388-3973-4768-93af-17455ad785d6.jpg";
 
 const Slide21 = () => (
-  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
-    {/* Фото всего зала — тёплый светлый фон */}
-    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${FAMILY_HALL_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
-    <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.78)" }} />
-    <SlideBg />
-    <div style={{ position: "absolute", bottom: -100, right: -100, width: 380, height: 380, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.15)", pointerEvents: "none" }} />
+  <div style={{ width: "100%", height: "100%", background: "#1C1008", display: "flex", position: "relative", overflow: "hidden" }}>
+    {/* Фото зала — на весь фон */}
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${FAMILY_HALL_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.6 }} />
+    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(20,10,3,0.82) 0%, rgba(20,10,3,0.55) 50%, rgba(20,10,3,0.75) 100%)" }} />
     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-    {/* Контент */}
-    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", padding: "20px 52px", gap: "14px" }}>
-      {/* Заголовок */}
-      <div>
-        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>IV блок</p>
-        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>О семье</h2>
-        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7 }} />
-      </div>
-      {/* Нарратив — два столбца */}
-      <div style={{ display: "flex", gap: "36px" }}>
-        <div style={{ flex: 1, fontFamily: FM, fontSize: "clamp(0.72rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.85 }}>
-          <p style={{ margin: "0 0 12px" }}>
-            На протяжении всего вечера воспоминания оживали — на экранах, в словах, в музыке. Но в финале ведущие обращаются к гостям: мы сами — здесь, живые — и вместе создали новое воспоминание. То самое, которое останется навсегда.
+    <div style={{ position: "absolute", bottom: -100, left: -100, width: 380, height: 380, borderRadius: "50%", border: "1px solid rgba(201,168,76,0.12)", pointerEvents: "none" }} />
+    {/* Контент — две колонки */}
+    <div style={{ position: "relative", zIndex: 2, width: "100%", display: "flex", padding: "24px 48px", gap: "32px" }}>
+      {/* Левая — нарратив */}
+      <div style={{ flex: "0 0 56%", display: "flex", flexDirection: "column", gap: "14px", justifyContent: "center" }}>
+        <div>
+          <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "rgba(201,168,76,0.75)", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>IV блок</p>
+          <h2 style={{ fontFamily: FH, fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#F5EDD6", fontWeight: 600, margin: 0 }}>О семье</h2>
+          <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7 }} />
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "rgba(245,237,214,0.88)", lineHeight: 1.85, margin: 0 }}>
+            На протяжении всего вечера воспоминания оживали — на экранах, в словах, в музыке. В финале ведущие обращаются к гостям: мы сами — здесь, живые — и вместе создали <strong style={{ color: "#E8C97A" }}>новое воспоминание</strong>. То самое, которое останется навсегда.
           </p>
-          <p style={{ margin: 0 }}>
-            Все гости выходят на <strong style={{ color: "#6B4F1A" }}>сценическую площадку</strong> — финальный эмоциональный кадр, который станет главной фотографией вечера. Рядом — именинник. В центре — его большая семья.
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "rgba(245,237,214,0.88)", lineHeight: 1.85, margin: 0 }}>
+            Все гости выходят на <strong style={{ color: "#E8C97A" }}>сценическую площадку</strong>. Эта семья — картина, которую написал самый главный автор — <strong style={{ color: "#E8C97A" }}>именинник</strong>. Каждый гость — мазок. Каждый год — слой.
           </p>
         </div>
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "10px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.72rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.85, margin: 0 }}>
-            Эта семья — картина, которую написал самый главный автор — <strong style={{ color: "#6B4F1A" }}>именинник</strong>. Каждый гость — мазок. Каждый год — слой. Вот она, во всей красоте, прямо сейчас.
-          </p>
-          <div style={{ display: "flex", flexDirection: "column", gap: "7px", marginTop: 4 }}>
-            {[
-              "Торт в виде фамильного герба",
-              "Прощание ведущих с гостями",
-            ].map((item, i) => (
-              <div key={i} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#C9A84C", flexShrink: 0 }} />
-                <p style={{ fontFamily: FM, fontSize: "clamp(0.72rem, 1.1vw, 0.86rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      {/* After Party */}
-      <div style={{ borderTop: "1px solid rgba(201,168,76,0.4)", paddingTop: "12px", display: "flex", gap: "20px", alignItems: "flex-start" }}>
-        <div style={{ flexShrink: 0 }}>
-          <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>After Party</p>
-        </div>
-        <div style={{ display: "flex", gap: "24px", flex: 1, flexWrap: "wrap" }}>
-          {[
-            { name: "Министерство культуры", link: "@mincult.show" },
-            { name: "ВИА «Пролетарское танго»", link: "@proletango" },
-            { name: "Музыкальный блок от диджея", link: "" },
-          ].map((act, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <div style={{ width: 2, height: "100%", minHeight: 20, background: "#C9A84C", flexShrink: 0 }} />
-              <div>
-                <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>{act.name}</p>
-                {act.link && <p style={{ fontFamily: FM, fontSize: "clamp(0.6rem, 0.9vw, 0.72rem)", color: "#8B6914", margin: 0 }}>{act.link}</p>}
-              </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+          {["Торт в виде фамильного герба", "Прощание ведущих с гостями"].map((item, i) => (
+            <div key={i} style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+              <div style={{ width: 28, height: 2, background: "#C9A84C", flexShrink: 0 }} />
+              <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#F5EDD6", fontWeight: 600, margin: 0 }}>{item}</p>
             </div>
           ))}
+        </div>
+      </div>
+      {/* Правая — after party */}
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "14px", borderLeft: "1px solid rgba(201,168,76,0.25)", paddingLeft: "28px" }}>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "rgba(201,168,76,0.7)", fontWeight: 700, margin: 0, textTransform: "uppercase" }}>After Party</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+          <div>
+            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#F5EDD6", fontWeight: 600, margin: "0 0 2px" }}>Министерство культуры</p>
+            <p style={{ fontFamily: FM, fontSize: "clamp(0.62rem, 0.92vw, 0.72rem)", color: "rgba(201,168,76,0.65)", margin: 0 }}>@mincult.show</p>
+          </div>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.64rem, 0.95vw, 0.74rem)", color: "rgba(201,168,76,0.5)", margin: 0, fontStyle: "italic", letterSpacing: "0.1em" }}>или</p>
+          <div>
+            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#F5EDD6", fontWeight: 600, margin: "0 0 2px" }}>ВИА «Пролетарское танго»</p>
+            <p style={{ fontFamily: FM, fontSize: "clamp(0.62rem, 0.92vw, 0.72rem)", color: "rgba(201,168,76,0.65)", margin: 0 }}>@proletango</p>
+          </div>
+          <div style={{ height: 1, background: "rgba(201,168,76,0.25)" }} />
+          <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#F5EDD6", fontWeight: 600, margin: 0 }}>Музыкальный блок от диджея</p>
         </div>
       </div>
     </div>
