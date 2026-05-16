@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const LIVING_ROOM_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/316d3820-8a0f-438e-8c59-67ea35e30207.jpg";
+const LIVING_ROOM_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/bucket/616b9eea-fb39-447b-9825-ec196ba08851.jpg";
 const BAR_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/f59e4a42-43cc-4f7d-a6ae-6f1364902f2d.jpg";
 const PHOTO_LAB_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/6146f0c6-76d2-43f7-acfb-2125d7525175.jpg";
 
@@ -37,7 +37,7 @@ const F = "'Montserrat', sans-serif";
 const Slide1 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.15 }} />
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", opacity: 0.22 }} />
     <div style={{ position: "absolute", bottom: -80, left: -80, width: 320, height: 320, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.22)", pointerEvents: "none" }} />
     <div style={{ position: "absolute", top: -60, right: -60, width: 240, height: 240, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.18)", pointerEvents: "none" }} />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "18px", padding: "0 60px" }}>
@@ -60,10 +60,14 @@ const Slide1 = () => (
 const Slide2 = () => (
   <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "38%", backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.55 }} />
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "46%", background: "linear-gradient(90deg, #F5EDD6 0%, rgba(245,237,214,0.7) 30%, transparent 100%)" }} />
+    {/* Фото — правая половина */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "45%", backgroundImage: `url(${LIVING_ROOM_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", opacity: 1 }} />
+    {/* Градиент-переход слева от фото */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "55%", background: "linear-gradient(90deg, #F0E5C4 0%, #EAD9B0 45%, rgba(234,217,176,0.85) 60%, transparent 100%)" }} />
+    {/* Тёмный оверлей поверх фото для читаемости */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "45%", background: "linear-gradient(90deg, rgba(240,229,196,0.6) 0%, transparent 40%)" }} />
     <div style={{ position: "absolute", top: "15%", bottom: "15%", left: 10, width: 2, background: "linear-gradient(180deg, transparent, rgba(201,168,76,0.4) 30%, rgba(201,168,76,0.4) 70%, transparent)", pointerEvents: "none" }} />
-    <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "12px", padding: "32px 44px", maxWidth: "60%" }}>
+    <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "12px", padding: "32px 44px", maxWidth: "58%" }}>
       <div>
         <h2 style={{ fontFamily: F, fontSize: "clamp(1.4rem, 2.8vw, 2.2rem)", color: "#2C1A06", fontWeight: 700, margin: 0 }}>Смыслы</h2>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 4 }} />
