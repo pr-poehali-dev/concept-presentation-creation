@@ -76,9 +76,8 @@ const Slide1 = () => (
     <CandleDecor style={{ bottom: 32, right: 48, fontSize: "2rem", opacity: 0.18 }} />
     <WarmCornerDecor />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "16px", padding: "0 60px" }}>
-      <div style={{ color: "#C9A84C", fontFamily: F, fontSize: "1.2rem", opacity: 0.6, letterSpacing: "0.35em" }}>✦ ✦ ✦</div>
       <div style={{ width: "340px", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-      <h1 style={{ fontFamily: F, fontSize: "clamp(2.4rem, 5.5vw, 4.2rem)", color: "#2C1A06", fontWeight: 800, lineHeight: 1.1, margin: 0 }}>
+      <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2.6rem, 6vw, 4.8rem)", color: "#2C1A06", fontWeight: 600, lineHeight: 1.08, margin: 0, letterSpacing: "0.01em" }}>
         Гостиная Времени
       </h1>
       <GoldDivider />
@@ -86,7 +85,6 @@ const Slide1 = () => (
         Концепция дня рождения в формате тёплой домашней гостиной, где собираются самые близкие
       </p>
       <div style={{ width: "340px", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-      <div style={{ color: "#C9A84C", fontFamily: F, fontSize: "0.9rem", opacity: 0.55 }}>✦</div>
     </div>
   </div>
 );
