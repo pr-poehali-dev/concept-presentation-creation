@@ -586,7 +586,7 @@ const Slide18 = () => (
     {/* Левая часть — весь текст */}
     <div style={{ position: "relative", zIndex: 2, width: "60%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "28px 44px", gap: "18px" }}>
       <div>
-        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок · Становление</p>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок</p>
         <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
           <h2 style={{ fontFamily: FH, fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Становление</h2>
           <span style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#8B6914", fontStyle: "italic" }}>Школьный опрос</span>
@@ -748,7 +748,7 @@ const Slide21 = () => (
       </div>
       {/* Правая — after party */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "14px", borderLeft: "1px solid rgba(201,168,76,0.35)", paddingLeft: "28px" }}>
-        <p style={{ fontFamily: FM, fontSize: "0.65rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: 0, textTransform: "uppercase" }}>After Party</p>
+        <p style={{ fontFamily: FH, fontSize: "clamp(1.3rem, 2vw, 1.6rem)", color: "#3A1A04", fontWeight: 700, margin: 0 }}>After Party</p>
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <div>
             <p style={{ fontFamily: FH, fontSize: "clamp(1.25rem, 2.1vw, 1.65rem)", color: "#1A0E04", fontWeight: 700, margin: "0 0 3px" }}>Министерство культуры</p>
