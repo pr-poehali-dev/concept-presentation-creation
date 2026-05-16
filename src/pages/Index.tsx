@@ -132,7 +132,6 @@ const Slide5Artists = () => {
   const people = ["Лолита", "Хор Турецкого"];
   return (
     <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden", gap: "16px", padding: "16px 28px" }}>
-      <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${SWING_HAZE_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.4 }} />
       <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.55)" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(201,168,76,0.08) 0%, transparent 60%)" }} />
       <DecorArcs />
