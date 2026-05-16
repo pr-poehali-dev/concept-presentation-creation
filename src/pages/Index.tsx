@@ -440,13 +440,14 @@ const Slide15 = () => (
     <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${APPLE_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.28 }} />
     <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.72)" }} />
     <SlideBg />
-    {/* Заголовок — компактный */}
-    <div style={{ position: "relative", zIndex: 2, padding: "14px 40px 0", flexShrink: 0 }}>
-      <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: 0, textTransform: "uppercase" }}>I блок · Начало пути</p>
-      <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 5 }} />
+    {/* Заголовок — крупный */}
+    <div style={{ position: "relative", zIndex: 2, padding: "16px 40px 0", flexShrink: 0 }}>
+      <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>I блок</p>
+      <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Начало пути</h2>
+      <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 6 }} />
     </div>
-    {/* Два столбца — занимают весь оставшийся слайд */}
-    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", gap: "24px", padding: "12px 40px 18px" }}>
+    {/* Два столбца */}
+    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", gap: "24px", padding: "10px 40px 16px" }}>
       <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "0", justifyContent: "space-evenly" }}>
         {[
           { title: "Номер с экранами", text: "На прозрачных экранах оживают мама и папа. Место действия — поле с хлопком и яблоневый сад. В зале появляется актёр — ребёнок Владимир (~8 класс), который взаимодействует с ожившими образами." },
@@ -622,8 +623,9 @@ const Slide19 = () => (
   <div style={{ width: "100%", height: "100%", background: "#1C1008", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
     {/* Плов / Казахстан — тёплый фон */}
     <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${PLOV_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.5 }} />
-    {/* Тёплый тёмный оверлей */}
-    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(30,16,4,0.88) 0%, rgba(30,16,4,0.7) 50%, rgba(30,16,4,0.82) 100%)" }} />
+    {/* Тёплый оверлей — светлее */}
+    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(30,16,4,0.7) 0%, rgba(30,16,4,0.45) 50%, rgba(30,16,4,0.6) 100%)" }} />
+    <div style={{ position: "absolute", inset: 0, background: "rgba(245,225,170,0.12)" }} />
     {/* Золотой блик сверху */}
     <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
     <div style={{ position: "absolute", bottom: -80, right: -80, width: 300, height: 300, borderRadius: "50%", border: "1px solid rgba(201,168,76,0.15)", pointerEvents: "none" }} />
@@ -686,59 +688,43 @@ const Slide19 = () => (
 const FILM_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/25c9494f-9c40-457d-bc1c-a7506c118675.jpg";
 
 const Slide20 = () => (
-  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
+  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
     <SlideBg />
-    {/* Кинолента фоном справа */}
-    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "42%", backgroundImage: `url(${FILM_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.5 }} />
-    <div style={{ position: "absolute", top: 0, right: "38%", bottom: 0, width: "22%", background: "linear-gradient(90deg, #EAD9B0, rgba(234,217,176,0))" }} />
-    <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "42%", background: "linear-gradient(135deg, #F5EDD6, #EAD9B0)" }} />
-    <LeftLine />
-    {/* Заголовок */}
-    <div style={{ position: "relative", zIndex: 2, padding: "20px 40px 0", flexShrink: 0 }}>
-      <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>III блок</p>
-      <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>О нём</h2>
-      <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7 }} />
-    </div>
-    {/* Основная часть */}
-    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", gap: "20px", padding: "12px 40px 20px" }}>
-      {/* Левая — роли и видео */}
-      <div style={{ flex: "0 0 52%", display: "flex", flexDirection: "column", gap: "12px" }}>
-        {/* Роли */}
-        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.8rem, 1.2vw, 0.94rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 6px" }}>Раскрываем все грани Владимира Анатольевича</p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-            {["Брат", "Любимый / муж", "Отец", "Дедушка", "Друг", "Профессионал", "Руководитель"].map((role, i) => (
-              <span key={i} style={{ fontFamily: FM, fontSize: "clamp(0.62rem, 0.95vw, 0.74rem)", color: "#6B4F1A", background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.4)", borderRadius: 20, padding: "3px 10px", fontWeight: 600 }}>{role}</span>
-            ))}
-          </div>
-        </div>
-        {/* Видео-характеристики */}
-        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.8rem, 1.2vw, 0.94rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Видео / голосовые от гостей</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
-            Заранее записанные характеристики — какой он, почему он важен. Каждый гость отвечает на один вопрос. Из этих кусочков складывается живой портрет именинника.
-          </p>
-        </div>
-        {/* Кино с ИИ */}
-        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.8rem, 1.2vw, 0.94rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Интерактив «Кино» с ИИ</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
-            Лица гостей и семьи внедряются в узнаваемые кинофрагменты разных жанров. <strong style={{ color: "#6B4F1A" }}>Ведущие эмоционально отыгрывают эпизоды</strong> — гости угадывают, кто появится следующим. Последний фрагмент подводит к выходу семьи.
-          </p>
-        </div>
+    {/* Кинолента — фон на весь слайд */}
+    <div style={{ position: "absolute", inset: 0, backgroundImage: `url(${FILM_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.3 }} />
+    <div style={{ position: "absolute", inset: 0, background: "rgba(245,237,214,0.82)" }} />
+    <DecorArcs />
+    {/* Весь контент — в одной вертикальной колонке по центру-левее */}
+    <div style={{ position: "relative", zIndex: 2, width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "22px 52px", gap: "16px" }}>
+      {/* Заголовок */}
+      <div>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>III блок</p>
+        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>О нём</h2>
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 0 }} />
       </div>
-      {/* Правая — финальный каскад */}
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
-        <div style={{ background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 8, padding: "14px 16px", position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)" }} />
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.8rem, 1.2vw, 0.94rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 6px" }}>Финал блока</p>
-          <div style={{ display: "flex", flexDirection: "column", gap: "7px", fontFamily: FM, fontSize: "clamp(0.68rem, 1.02vw, 0.8rem)", color: "#3A2B0F", lineHeight: 1.78 }}>
-            <p style={{ margin: 0 }}>Перформанс, подводящий к семье</p>
-            <p style={{ margin: 0 }}><strong style={{ color: "#6B4F1A" }}>Поздравление от семей:</strong> сыновья, жёны, внуки</p>
-            <p style={{ margin: 0 }}>Большое творческое поздравление от гостей — <strong style={{ color: "#6B4F1A" }}>творческое караоке в гостиной</strong></p>
-            <div style={{ height: 1, background: "rgba(201,168,76,0.3)", margin: "4px 0" }} />
-            <p style={{ margin: 0, color: "#6B4F1A", fontWeight: 600 }}>Выступление хедлайнера на выбор или кавер-группа</p>
-          </div>
+      {/* Роли — теги */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "7px" }}>
+        {["Брат", "Любимый / муж", "Отец", "Дедушка", "Друг", "Профессионал", "Руководитель"].map((role, i) => (
+          <span key={i} style={{ fontFamily: FM, fontSize: "clamp(0.64rem, 0.98vw, 0.76rem)", color: "#6B4F1A", background: "rgba(201,168,76,0.14)", border: "1px solid rgba(201,168,76,0.45)", borderRadius: 20, padding: "3px 12px", fontWeight: 700 }}>{role}</span>
+        ))}
+      </div>
+      {/* Связный нарратив */}
+      <div style={{ display: "flex", gap: "32px" }}>
+        <div style={{ flex: 1, fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.85 }}>
+          <p style={{ margin: "0 0 10px" }}>
+            Этот блок — живой портрет именинника, собранный из голосов тех, кто знает его лучше всего. Заранее записанные видео и голосовые сообщения от гостей: каждый — об одной грани. Какой он как отец. Какой как друг. Что в нём видит руководитель. Что чувствует брат. Из этих кусочков на экране складывается образ — настоящий, объёмный, без сценария.
+          </p>
+          <p style={{ margin: 0 }}>
+            Затем — <strong style={{ color: "#6B4F1A" }}>интерактив «Кино» с ИИ</strong>. Лица гостей и семьи внедряются в узнаваемые кинофрагменты разных жанров. Ведущие эмоционально отыгрывают эпизоды — зал угадывает, кто появится следующим. Последний кадр подводит к выходу семьи.
+          </p>
+        </div>
+        <div style={{ flex: 1, fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.85 }}>
+          <p style={{ margin: "0 0 10px" }}>
+            Перформанс мягко подводит к самому главному — к семье. Поздравление от <strong style={{ color: "#6B4F1A" }}>сыновей, жён и внуков</strong> перетекает в большое творческое поздравление всех гостей — <strong style={{ color: "#6B4F1A" }}>живое семейное караоке в гостиной</strong>, где каждый может выйти и спеть.
+          </p>
+          <p style={{ margin: 0, color: "#6B4F1A", fontWeight: 600, fontStyle: "italic", fontFamily: FH, fontSize: "clamp(0.78rem, 1.15vw, 0.92rem)" }}>
+            Финал — выступление хедлайнера на выбор или кавер-группа.
+          </p>
         </div>
       </div>
     </div>
