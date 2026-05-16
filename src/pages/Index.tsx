@@ -416,37 +416,37 @@ const Slide15 = () => (
     <SlideBg />
     <DecorArcs />
     {/* Заголовок */}
-    <div style={{ position: "relative", zIndex: 2, padding: "28px 40px 0", flexShrink: 0 }}>
+    <div style={{ position: "relative", zIndex: 2, padding: "20px 40px 0", flexShrink: 0 }}>
       <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>I блок</p>
       <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Начало пути</h2>
       <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 6 }} />
     </div>
     {/* Основная часть — два столбца текста */}
-    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", gap: "28px", padding: "16px 40px 28px" }}>
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "14px" }}>
+    <div style={{ position: "relative", zIndex: 2, flex: 1, display: "flex", gap: "28px", padding: "18px 40px 32px" }}>
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "16px" }}>
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Номер с экранами</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.8rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.82rem, 1.2vw, 0.95rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 5px" }}>Номер с экранами</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
             На прозрачных экранах оживают <strong style={{ color: "#6B4F1A" }}>мама и папа</strong>. Место действия — поле с хлопком и яблоневый сад. В зале среди гостей появляется <strong style={{ color: "#6B4F1A" }}>актёр — ребёнок Владимир</strong> (возраст ~8 класс), который взаимодействует с ожившими образами на экране.
           </p>
         </div>
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Мама Екатерина и платок</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.8rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.82rem, 1.2vw, 0.95rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 5px" }}>Мама Екатерина и платок</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
             На прозрачном экране появляется <strong style={{ color: "#6B4F1A" }}>образ мамы Екатерины</strong>. После тёплого повествования ребёнок подходит и вручает ей платок — живой жест через экран, связывающий прошлое и настоящее.
           </p>
         </div>
       </div>
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "14px" }}>
+      <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "16px" }}>
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Папа Анатолий и яблоко</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.8rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.82rem, 1.2vw, 0.95rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 5px" }}>Папа Анатолий и яблоко</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
             Ребёнок начинает есть яблоко — и с экрана звучит голос <strong style={{ color: "#6B4F1A" }}>папы Анатолия</strong>: <em>«Уже на одно меньше».</em> Две истории — на экране и в жизни — сплетаются в один момент.
           </p>
         </div>
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.76rem, 1.15vw, 0.9rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Поздравление сыновей</p>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.8rem)", color: "#3A2B0F", lineHeight: 1.8, margin: 0 }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.82rem, 1.2vw, 0.95rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 5px" }}>Поздравление сыновей</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.74rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
             Сыновья сегодня — его отражение и его дело. <strong style={{ color: "#6B4F1A" }}>Поздравление сыновей</strong> (без семьи). В финале появляются мальчики разных возрастов — олицетворение сыновей в разные эпохи — вместе с <strong style={{ color: "#6B4F1A" }}>настоящими внуками</strong>.
           </p>
         </div>
@@ -476,10 +476,10 @@ const Slide16 = () => (
       </div>
       <div style={{ display: "flex", gap: "24px", alignItems: "flex-start" }}>
         <div style={{ flex: "0 0 34%", display: "flex", flexDirection: "column", gap: "12px" }}>
-          <p style={{ fontFamily: FM, fontSize: "clamp(0.72rem, 1.1vw, 0.86rem)", color: "#3A2B0F", lineHeight: 1.85, margin: 0 }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.78rem, 1.2vw, 0.92rem)", color: "#3A2B0F", lineHeight: 1.85, margin: 0 }}>
             Ведущие рассказывают, что сыновья появятся в истории жизни героя чуть позже. А <strong style={{ color: "#6B4F1A" }}>первой была она</strong> — его единственная любовь.
           </p>
-          <p style={{ fontFamily: FH, fontSize: "clamp(0.82rem, 1.2vw, 1rem)", color: "#7A5C2E", lineHeight: 1.7, margin: 0, fontStyle: "italic" }}>
+          <p style={{ fontFamily: FH, fontSize: "clamp(0.88rem, 1.3vw, 1.05rem)", color: "#7A5C2E", lineHeight: 1.7, margin: 0, fontStyle: "italic" }}>
             Душевно-лиричное стихотворение про Казахстан — про землю, где всё началось.
           </p>
         </div>
@@ -500,8 +500,8 @@ const Slide16 = () => (
           ].map((item, i) => (
             <div key={i} style={{ flex: 1, background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 8, padding: "16px 18px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.6), transparent)" }} />
-              <p style={{ fontFamily: FM, fontSize: "clamp(0.75rem, 1.15vw, 0.9rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 8px" }}>{item.title}</p>
-              <p style={{ fontFamily: FM, fontSize: "clamp(0.64rem, 0.98vw, 0.76rem)", color: "#5A3E18", lineHeight: 1.75, margin: 0 }}>{item.text}</p>
+              <p style={{ fontFamily: FM, fontSize: "clamp(0.82rem, 1.2vw, 0.95rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 8px" }}>{item.title}</p>
+              <p style={{ fontFamily: FM, fontSize: "clamp(0.72rem, 1.08vw, 0.84rem)", color: "#5A3E18", lineHeight: 1.78, margin: 0 }}>{item.text}</p>
             </div>
           ))}
         </div>
@@ -551,11 +551,48 @@ const Slide17 = () => (
     </div>
     {/* Правая часть — детский рисунок моря */}
     <div style={{ position: "relative", zIndex: 2, flex: "0 0 45%", padding: "20px 28px 20px 0" }}>
-      <div style={{ width: "100%", height: "100%", backgroundImage: `url(${SEA_PAINTING_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 28px rgba(58,43,15,0.18)", position: "relative", overflow: "hidden" }}>
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "25%", background: "linear-gradient(transparent, rgba(240,229,196,0.5))" }} />
-        <p style={{ position: "absolute", bottom: 12, left: 14, fontFamily: FH, fontSize: "clamp(0.65rem, 1vw, 0.78rem)", color: "#3A2B0F", margin: 0, fontStyle: "italic" }}>
-          Детский рисунок моря — контент номера
-        </p>
+      <div style={{ width: "100%", height: "100%", backgroundImage: `url(${SEA_PAINTING_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 28px rgba(58,43,15,0.18)" }} />
+    </div>
+  </div>
+);
+
+// ────────────── SLIDE 18: БЛОК 2 — ШКОЛЬНЫЙ ОПРОС ──────────────
+const SCHOOL_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/files/898fa0a1-7cad-46ca-915d-ba0f27fa2acd.jpg";
+
+const Slide18 = () => (
+  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
+    <SlideBg />
+    {/* Фото школы — фоновый акцент справа */}
+    <div style={{ position: "absolute", top: 0, right: 0, bottom: 0, width: "40%", backgroundImage: `url(${SCHOOL_IMG})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.6 }} />
+    <div style={{ position: "absolute", top: 0, right: "36%", bottom: 0, width: "20%", background: "linear-gradient(90deg, #EAD9B0, rgba(234,217,176,0))" }} />
+    <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "43%", background: "linear-gradient(135deg, #F5EDD6, #EAD9B0)" }} />
+    <LeftLine />
+    {/* Контент */}
+    <div style={{ position: "relative", zIndex: 2, width: "57%", display: "flex", flexDirection: "column", gap: "13px", padding: "24px 36px" }}>
+      <div>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок</p>
+        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Становление</h2>
+        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 10 }} />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "11px" }}>
+        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.78rem, 1.2vw, 0.92rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Ведущая-учительница</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
+            Ведущая перевоплощается в <strong style={{ color: "#6B4F1A" }}>учительницу</strong> и разыгрывает «школьный» опрос — с указкой, журналом и строгим взглядом. Интерактивный блиц-опрос: вопросы про именинника, которые вовлекают гостей и переходят в номер.
+          </p>
+        </div>
+        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.78rem, 1.2vw, 0.92rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Номер про учёбу и профессию</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
+            Артисты с реквизитом разыгрывают историю становления — от парты до профессии. На экранах рисунки переходят из <strong style={{ color: "#6B4F1A" }}>школьной тематики в чертежи</strong>.
+          </p>
+        </div>
+        <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "12px" }}>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.78rem, 1.2vw, 0.92rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 4px" }}>Поздравление от друзей</p>
+          <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.08vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.82, margin: 0 }}>
+            Слово берут <strong style={{ color: "#6B4F1A" }}>школьные и институтские друзья</strong> — те самые, с кем всё начиналось. Живые истории, которые не придумать.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -580,6 +617,7 @@ const slides = [
   { id: 15, component: <Slide15 /> },
   { id: 16, component: <Slide16 /> },
   { id: 17, component: <Slide17 /> },
+  { id: 18, component: <Slide18 /> },
 ];
 
 // ────────────── MAIN ──────────────
