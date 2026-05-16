@@ -63,20 +63,20 @@ const Slide1 = () => (
     <div style={{ position: "absolute", bottom: -80, left: -80, width: 320, height: 320, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.22)", pointerEvents: "none" }} />
     <div style={{ position: "absolute", top: -60, right: -60, width: 240, height: 240, borderRadius: "50%", border: "1.5px solid rgba(201,168,76,0.18)", pointerEvents: "none" }} />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "20px", padding: "0 64px" }}>
-      <div style={{ color: "#C9A84C", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", opacity: 0.65, letterSpacing: "0.3em" }}>✦ ✦ ✦</div>
+      <div style={{ color: "#C9A84C", fontFamily: "'Montserrat', sans-serif", fontSize: "1.8rem", opacity: 0.65, letterSpacing: "0.3em" }}>✦ ✦ ✦</div>
       <div style={{ width: "100%", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
         <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.7rem", color: "#8B6914", letterSpacing: "0.38em", fontWeight: 600 }}>КОНЦЕПЦИЯ ДНЯ РОЖДЕНИЯ</p>
-        <h1 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(2.5rem, 5.5vw, 4.5rem)", color: "#2C1A06", fontWeight: 400, lineHeight: 1.1, margin: 0 }}>
+        <h1 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(2.5rem, 5.5vw, 4.5rem)", color: "#2C1A06", fontWeight: 400, lineHeight: 1.1, margin: 0 }}>
           Гостиная Времени
         </h1>
         <GoldDivider />
-        <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.3rem", fontStyle: "italic", color: "#7A5C2E", maxWidth: "480px", lineHeight: 1.55 }}>
+        <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1.3rem", fontStyle: "italic", color: "#7A5C2E", maxWidth: "480px", lineHeight: 1.55 }}>
           Праздник, где время останавливается, а близкие собираются вместе
         </p>
       </div>
       <div style={{ width: "100%", height: "2px", background: "linear-gradient(90deg, transparent, #C9A84C, #E8C97A, #C9A84C, transparent)" }} />
-      <div style={{ color: "#C9A84C", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.4rem", opacity: 0.6 }}>✦</div>
+      <div style={{ color: "#C9A84C", fontFamily: "'Montserrat', sans-serif", fontSize: "1.4rem", opacity: 0.6 }}>✦</div>
     </div>
   </div>
 );
@@ -91,7 +91,7 @@ const Slide2 = () => (
     <div style={{ position: "relative", zIndex: 2, display: "flex", flexDirection: "column", gap: "16px", padding: "40px 48px", maxWidth: "60%" }}>
       <div>
         <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.62rem", letterSpacing: "0.35em", color: "#8B6914", marginBottom: "6px" }}>ФИЛОСОФИЯ СОБЫТИЯ</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Смыслы</h2>
+        <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Смыслы</h2>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 8 }} />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontFamily: "'Montserrat', sans-serif", fontSize: "0.72rem", color: "#3A2B0F", lineHeight: 1.8 }}>
@@ -99,7 +99,7 @@ const Slide2 = () => (
         <p>Ему не нужно развлекать гостей — он просто наблюдает, как все собираются, общаются, смеются, и чувствует, что всем <strong style={{ color: "#6B4F1A" }}>комфортно и кайфово</strong>.</p>
         <p>Картины оживают как <strong style={{ color: "#6B4F1A" }}>театральный перформанс</strong> — за стеклом появляется актёр, тень, видеовставка или живая сцена, рассказывающая истории именинника.</p>
         <p>Над всем этим — <strong style={{ color: "#6B4F1A" }}>фамильный герб</strong>. Старые часы отсчитывают не минуты, а эпохи. Потёртое кресло хранит тепло локтей. Рамки с выцветшими снимками вдруг оживают голосами друзей.</p>
-        <p style={{ fontStyle: "italic", color: "#6B4F1A", fontFamily: "'Cormorant Garamond', serif", fontSize: "0.9rem" }}>Именно это мы и предлагаем — честно, душевно, с выдумкой и без пафоса.</p>
+        <p style={{ fontStyle: "italic", color: "#6B4F1A", fontFamily: "'Montserrat', sans-serif", fontSize: "0.9rem" }}>Именно это мы и предлагаем — честно, душевно, с выдумкой и без пафоса.</p>
       </div>
     </div>
   </div>
@@ -112,7 +112,7 @@ const PeopleSlide = ({ label, title, people, photoSize }: { label: string; title
     <DecorArcs />
     <div style={{ position: "relative", zIndex: 2, textAlign: "center" }}>
       <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.62rem", letterSpacing: "0.35em", color: "#8B6914", marginBottom: "6px" }}>{label}</p>
-      <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>{title}</h2>
+      <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>{title}</h2>
       <GoldDivider />
     </div>
     <div style={{ position: "relative", zIndex: 2, display: "flex", gap: people.length <= 3 ? "48px" : "24px", justifyContent: "center", alignItems: "flex-end", flexWrap: "wrap" }}>
@@ -120,7 +120,7 @@ const PeopleSlide = ({ label, title, people, photoSize }: { label: string; title
         <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
           <PhotoPlaceholder name={name} width={photoSize.w} height={photoSize.h} />
           <div style={{ textAlign: "center" }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", color: "#2C1A06", fontWeight: 500, margin: 0, maxWidth: "160px", lineHeight: 1.3 }}>{name}</p>
+            <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1rem", color: "#2C1A06", fontWeight: 500, margin: 0, maxWidth: "160px", lineHeight: 1.3 }}>{name}</p>
             <div style={{ width: 36, height: 1, background: "linear-gradient(90deg, transparent, #C9A84C, transparent)", margin: "5px auto 0" }} />
           </div>
         </div>
@@ -136,7 +136,7 @@ const Slide8 = () => (
     <div style={{ position: "relative", zIndex: 2, flex: "0 0 55%", display: "flex", flexDirection: "column", gap: "16px", padding: "36px 40px" }}>
       <div>
         <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.62rem", letterSpacing: "0.35em", color: "#8B6914", marginBottom: "6px" }}>НАЧАЛО ВЕЧЕРА</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Welcome</h2>
+        <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Welcome</h2>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 8, marginBottom: 12 }} />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "9px", fontFamily: "'Montserrat', sans-serif", fontSize: "0.68rem", color: "#3A2B0F", lineHeight: 1.75 }}>
@@ -154,7 +154,7 @@ const Slide8 = () => (
           </div>
         ))}
       </div>
-      <div style={{ marginTop: 8, padding: "10px 14px", background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 4, fontFamily: "'Cormorant Garamond', serif", fontSize: "0.88rem", fontStyle: "italic", color: "#6B4F1A" }}>
+      <div style={{ marginTop: 8, padding: "10px 14px", background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.35)", borderRadius: 4, fontFamily: "'Montserrat', sans-serif", fontSize: "0.88rem", fontStyle: "italic", color: "#6B4F1A" }}>
         ♪ Живая музыка: Алексей Алексин (вокал, гитара) — или Ксения Аксютик, финалистка 14-го сезона «Голос»
       </div>
     </div>
@@ -175,7 +175,7 @@ const Slide9 = () => (
     <div style={{ position: "relative", zIndex: 2, flex: "0 0 52%", display: "flex", flexDirection: "column", gap: "16px", padding: "36px 40px" }}>
       <div>
         <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.62rem", letterSpacing: "0.35em", color: "#8B6914", marginBottom: "6px" }}>ИНТЕРАКТИВНЫЕ ЗОНЫ</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Welcome</h2>
+        <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: "#2C1A06", fontWeight: 400, margin: 0 }}>Welcome</h2>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 8, marginBottom: 16 }} />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
@@ -194,7 +194,7 @@ const Slide9 = () => (
           },
         ].map((zone, i) => (
           <div key={i} style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "14px" }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem", color: "#2C1A06", fontWeight: 600, margin: "0 0 4px" }}>{zone.title}</p>
+            <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1rem", color: "#2C1A06", fontWeight: 600, margin: "0 0 4px" }}>{zone.title}</p>
             <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.65rem", color: "#5A3E18", lineHeight: 1.75, margin: 0 }}>{zone.text}</p>
           </div>
         ))}
