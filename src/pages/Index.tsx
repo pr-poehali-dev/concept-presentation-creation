@@ -630,9 +630,9 @@ const Slide19 = () => (
     {/* Левая часть — весь текст, как на 18 слайде */}
     <div style={{ position: "relative", zIndex: 2, width: "60%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "28px 44px", gap: "18px" }}>
       <div>
-        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок · Становление</p>
+        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 4px", textTransform: "uppercase" }}>II блок</p>
         <div style={{ display: "flex", alignItems: "baseline", gap: "14px" }}>
-          <h2 style={{ fontFamily: FH, fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Становление</h2>
+          <h2 style={{ fontFamily: FH, fontSize: "clamp(2rem, 3.8vw, 3rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Номер про стройку</h2>
           <span style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.05vw, 0.82rem)", color: "#8B6914", fontStyle: "italic" }}>Попурри из песен</span>
         </div>
         <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7 }} />
