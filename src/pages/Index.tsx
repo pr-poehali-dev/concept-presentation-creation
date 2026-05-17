@@ -752,8 +752,7 @@ const Slide21 = () => (
           </div>
           <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#C9A84C", fontWeight: 700, margin: 0, fontStyle: "italic", letterSpacing: "0.1em" }}>или</p>
           <div>
-            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#1A0E04", fontWeight: 700, margin: "0 0 3px" }}>ВИА «Пролетарское танго»</p>
-            <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#6B4F1A", fontWeight: 600, margin: 0 }}>@proletango</p>
+            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#1A0E04", fontWeight: 700, margin: 0 }}>ВИА «Пролетарское танго»</p>
           </div>
           <div style={{ height: 1, background: "rgba(201,168,76,0.4)" }} />
           <p style={{ fontFamily: FM, fontSize: "clamp(0.7rem, 1.1vw, 0.84rem)", color: "#1A0E04", fontWeight: 400, margin: 0 }}>Музыкальный блок от диджея</p>
