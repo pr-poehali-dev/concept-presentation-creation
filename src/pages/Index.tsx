@@ -414,7 +414,7 @@ const Slide14 = () => (
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "14px" }}>
           <p style={{ fontFamily: FM, fontSize: "clamp(0.72rem, 1.1vw, 0.86rem)", color: "#2C1A06", fontWeight: 700, margin: "0 0 5px" }}>Качели опускаются в зал</p>
           <p style={{ fontFamily: FM, fontSize: "clamp(0.64rem, 0.98vw, 0.76rem)", color: "#3A2B0F", lineHeight: 1.78, margin: 0 }}>
-            В середине повествования ведущие появляются перед гостями, рассказывая часть про качели — и в этот момент медленно опускаются <strong style={{ color: "#6B4F1A" }}>резные золотые качели</strong>. Ведущие взаимодействуют с гостями вокруг них.
+            В середине повествования ведущие появляются перед гостями, рассказывая часть про качели — и в этот момент медленно опускаются <strong style={{ color: "#6B4F1A" }}>качели</strong>. Ведущие взаимодействуют с гостями вокруг них.
           </p>
         </div>
         <div style={{ borderLeft: "2px solid #C9A84C", paddingLeft: "14px" }}>
