@@ -314,41 +314,33 @@ const ROOM_DECOR_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1
 const TUFTING_HERALDIC_IMG = "https://cdn.poehali.dev/projects/b9e604be-bb2d-4161-84c1-bbe2c0c53faa/bucket/57b78135-abaf-4937-b32a-78f077dc2d7e.jpg";
 
 const Slide12 = () => (
-  <div style={{ width: "100%", height: "100%", background: SLIDE_BG, display: "flex", position: "relative", overflow: "hidden" }}>
-    <SlideBg />
-    <LeftLine />
-    {/* Левая часть — текст */}
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 54%", display: "flex", flexDirection: "column", gap: "12px", padding: "28px 36px" }}>
-      <div>
-        <p style={{ fontFamily: FM, fontSize: "0.6rem", letterSpacing: "0.3em", color: "#C9A84C", fontWeight: 700, margin: "0 0 6px", textTransform: "uppercase" }}>I блок</p>
-        <h2 style={{ fontFamily: FH, fontSize: "clamp(1.7rem, 3.2vw, 2.6rem)", color: "#2C1A06", fontWeight: 600, margin: 0 }}>Начало пути</h2>
-        <div style={{ width: 60, height: 2, background: "linear-gradient(90deg, #C9A84C, transparent)", marginTop: 7, marginBottom: 12 }} />
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: "11px", fontFamily: FM, fontSize: "clamp(0.7rem, 1.1vw, 0.84rem)", color: "#3A2B0F", lineHeight: 1.82 }}>
-        <p style={{ margin: 0 }}>
-          Гости входят в зал и занимают места по секторам — каждый на своём, заранее обозначенном месте. Пространство уже дышит историей: мягкий свет, тишина предвкушения, запах тёплого дерева и воска.
-        </p>
-        <p style={{ margin: 0 }}>
-          Вечер открывает <strong style={{ color: "#6B4F1A" }}>погружающий номер</strong>. По залу развешены картины — рамы, которые кажутся обычными. Но один за другим экраны начинают оживать.
-        </p>
-        <p style={{ margin: 0 }}>
-          Голос рассказывает: это место, где хранятся самые тёплые воспоминания. Здесь живут моменты, которые невозможно забыть — первые шаги, смех за большим столом, летние вечера, когда все были вместе. И сегодня <strong style={{ color: "#6B4F1A" }}>мечта именинника сбылась</strong> — большая гостиная наполнена теми, кого он любит больше всего на свете.
-        </p>
-        <p style={{ margin: 0, color: "#6B4F1A", fontStyle: "italic", fontFamily: FH, fontSize: "clamp(0.75rem, 1.1vw, 0.9rem)" }}>
-          «Именно об этом он мечтал — чтобы все собрались. И вот — все здесь.»
+  <div style={{ width: "100%", height: "100%", background: "#FAFAF7", display: "flex", flexDirection: "column", position: "relative", overflow: "hidden" }}>
+    {/* Тонкая золотая линия сверху */}
+    <div style={{ height: 3, background: "linear-gradient(90deg, transparent, #C9A84C 30%, #C9A84C 70%, transparent)" }} />
+    {/* Основное содержимое */}
+    <div style={{ flex: 1, display: "flex" }}>
+      {/* Левая часть — крупная типографика */}
+      <div style={{ flex: "0 0 52%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "32px 48px" }}>
+        <p style={{ fontFamily: FM, fontSize: "0.58rem", letterSpacing: "0.4em", color: "#C9A84C", fontWeight: 700, margin: "0 0 16px", textTransform: "uppercase" }}>I блок</p>
+        <h2 style={{ fontFamily: FH, fontSize: "clamp(2.4rem, 4.5vw, 3.6rem)", color: "#1A0E04", fontWeight: 300, margin: "0 0 24px", lineHeight: 1.15, letterSpacing: "-0.01em" }}>Начало<br /><em style={{ fontStyle: "italic", color: "#6B4F1A" }}>пути</em></h2>
+        <div style={{ width: 40, height: 1, background: "#C9A84C", marginBottom: 24 }} />
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#4A3820", lineHeight: 1.85 }}>
+          <p style={{ margin: 0 }}>Гости входят в зал и занимают места по секторам. Пространство уже дышит историей: мягкий свет, тишина предвкушения.</p>
+          <p style={{ margin: 0 }}>Вечер открывает <strong style={{ color: "#3A1A04", fontWeight: 600 }}>погружающий номер</strong> — картины на стенах оживают одна за другой.</p>
+          <p style={{ margin: 0 }}>Голос рассказывает о самых тёплых воспоминаниях. И сегодня <strong style={{ color: "#3A1A04", fontWeight: 600 }}>мечта именинника сбылась</strong> — все здесь.</p>
+        </div>
+        <p style={{ margin: "20px 0 0", fontFamily: FH, fontSize: "clamp(0.8rem, 1.15vw, 0.95rem)", color: "#8B6014", fontStyle: "italic", borderLeft: "2px solid #C9A84C", paddingLeft: 14 }}>
+          «Именно об этом он мечтал — чтобы все собрались.»
         </p>
       </div>
-    </div>
-    {/* Правая часть — камин с гербом над ним */}
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 46%", display: "flex", flexDirection: "column", gap: 0, padding: "20px 28px 20px 0" }}>
-      {/* Камин — основа */}
-      <div style={{ flex: 1, backgroundImage: `url(${ROOM_DECOR_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 6, border: "2px solid rgba(201,168,76,0.4)", boxShadow: "0 6px 24px rgba(58,43,15,0.16)", position: "relative", overflow: "hidden" }}>
-        {/* Фамильный герб поверх, над камином — как картина */}
-        <div style={{ position: "absolute", top: "8%", left: "50%", transform: "translateX(-50%)", width: "48%", aspectRatio: "1", backgroundImage: `url(${TUFTING_HERALDIC_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 4, border: "3px solid rgba(201,168,76,0.8)", boxShadow: "0 4px 20px rgba(20,10,0,0.5)" }} />
-        {/* Подпись под гербом */}
-        <p style={{ position: "absolute", top: "calc(8% + 48% + 8px)", left: "50%", transform: "translateX(-50%)", fontFamily: FM, fontSize: "0.5rem", color: "rgba(201,168,76,0.9)", margin: 0, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", whiteSpace: "nowrap" }}>Фамильный герб</p>
+      {/* Правая часть — фото */}
+      <div style={{ flex: "0 0 48%", display: "flex", flexDirection: "column", gap: "12px", padding: "24px 32px 24px 0" }}>
+        <div style={{ flex: "0 0 58%", backgroundImage: `url(${ROOM_DECOR_IMG})`, backgroundSize: "cover", backgroundPosition: "center", borderRadius: 2 }} />
+        <div style={{ flex: 1, backgroundImage: `url(${TUFTING_HERALDIC_IMG})`, backgroundSize: "cover", backgroundPosition: "center top", borderRadius: 2 }} />
       </div>
     </div>
+    {/* Тонкая золотая линия снизу */}
+    <div style={{ height: 3, background: "linear-gradient(90deg, transparent, #C9A84C 30%, #C9A84C 70%, transparent)" }} />
   </div>
 );
 
