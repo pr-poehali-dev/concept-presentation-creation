@@ -168,11 +168,14 @@ const Slide8 = () => (
         <p style={{ margin: 0 }}>Ещё до того, как вечер официально начнётся, гостей встречают хостес — вручают небольшую карточку с указанием <strong style={{ color: "#6B4F1A" }}>сектора, где их ждёт место за столом</strong>. Это первый жест внимания, который сразу задаёт тон всему вечеру.</p>
         <p style={{ margin: 0 }}>В пространстве welcome-зоны расставлены <strong style={{ color: "#6B4F1A" }}>изысканные закуски</strong>, а фотографы и видеографы уже работают — каждый момент встречи, каждый взгляд и улыбка сохраняются в памяти.</p>
         <p style={{ margin: 0 }}>Параллельно снимается <strong style={{ color: "#6B4F1A" }}>SDE</strong> — трогательный фильм о жизни именинника, который будет показан гостям прямо в этот же вечер.</p>
-        <p style={{ margin: 0 }}>И где-то среди гостей появляется символ праздника — <strong style={{ color: "#6B4F1A" }}>медведь, конь или олень</strong>. Неожиданный, тёплый, запоминающийся навсегда.</p>
+        <p style={{ margin: 0 }}>Создаём уютную атмосферу гостиной, где хочется остановиться, сесть у камина и послушать музыку.</p>
+        <p style={{ margin: 0 }}>Предлагаем музыканта <strong style={{ color: "#6B4F1A" }}>Алексина А.В.</strong>, который поёт и играет на гитаре.</p>
+        <p style={{ margin: 0 }}>Альтернатива: вокалистка <strong style={{ color: "#6B4F1A" }}>Ксения Аксютик</strong> (финалистка 14-го «Голоса»)</p>
       </div>
     </div>
-    <div style={{ position: "relative", zIndex: 2, flex: "0 0 42%", display: "flex", alignItems: "center", padding: "24px 32px 24px 0" }}>
-      <ImgPlaceholder flex={undefined} width="100%" height="82%" />
+    <div style={{ position: "relative", zIndex: 2, flex: "0 0 42%", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center", justifyContent: "center", padding: "24px 32px 24px 0" }}>
+      <ImgPlaceholder flex={undefined} width="100%" height="47%" />
+      <ImgPlaceholder flex={undefined} width="100%" height="47%" />
     </div>
   </div>
 );
