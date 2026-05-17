@@ -748,8 +748,7 @@ const Slide21 = () => (
         <p style={{ fontFamily: FH, fontSize: "clamp(1.3rem, 2vw, 1.6rem)", color: "#3A1A04", fontWeight: 700, margin: 0 }}>After Party</p>
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <div>
-            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#1A0E04", fontWeight: 700, margin: "0 0 3px" }}>Министерство культуры</p>
-            <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#6B4F1A", fontWeight: 600, margin: 0 }}>@mincult.show</p>
+            <p style={{ fontFamily: FH, fontSize: "clamp(0.9rem, 1.4vw, 1.1rem)", color: "#1A0E04", fontWeight: 700, margin: "0 0 3px" }}>Кавер-группа «Министерство культуры»</p>
           </div>
           <p style={{ fontFamily: FM, fontSize: "clamp(0.68rem, 1.05vw, 0.82rem)", color: "#C9A84C", fontWeight: 700, margin: 0, fontStyle: "italic", letterSpacing: "0.1em" }}>или</p>
           <div>
